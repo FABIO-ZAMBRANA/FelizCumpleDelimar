@@ -1,129 +1,120 @@
-<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FELICIDADES Mami</title>
-    <link rel="stylesheet" href="./css/momLove.css">
-    <link rel="stylesheet" href="./lib/fontawesome-5.15.3/css/all.min.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="cover cover-left"></div>
-        <div class="cover cover-right"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>... </title>
 
-        <div class="book">
-            <div class="book-page page-left">
-                <div class="profile-page">
-                    <img src="img/ella.JPG" alt="">
-                    <h1>FELICIDADES</h1>
-                    <h3>MAMÁ</h3>
-                    <div class="social-media">
-                        <a href="#">T</a>
-                        <a href="#">A</a>
-                        <a href="#">M</a>
-                        <a href="#"><i class="fas fa-heart"></i></a>
-                    </div>
-                    <p>
-                        Mami este es mi regalo de cumple para ti se que no sera la gran cosa pero queria que te sintieras mas orgullosa de mi cada dia porque eso para mi es vital y esta es la mejor manera hacer un programa solo para ti que te lo mereces sin lugar a dudas espero que lo disfrutes TE AMO
-                    </p>
-                    <div class="btn-box">
-                        <a href="#" class="btn contact-me">&#127873;</a>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-            <div class="book-page page-right turn" id="turn-1">
-                <div class="page-front">
-                    <h1>Hija, Madre, Abuela, Pareja...</h1>
-                    <div class="cake">
-                        <div class="top-layer"></div>
-                        <div class="middle-layer"></div>
-                        <div class="bottom-layer"></div>
-                        <div class="candle"></div>
-                    </div>
-
-                    <span class="number-page">1</span>
-                    <span class="nextprev-btn" data-page="turn-1"><i class="fas fa-angle-right"></i></span>
-                </div>
-                <div class="page-back">
-                    <h1 class="title">Familiar</h1>
-                    <img src="img/ella, yo y ainoa 2.JPG" alt="" width=400px height=400px>
-
-                    <span class="number-page">2</span>
-                    <span class="nextprev-btn back" data-page="turn-1"><i class="fas fa-angle-left"></i></span>
-
-                </div>
-            </div>
-
-            <div class="book-page page-right turn" id="turn-2">
-                <div class="page-front">
-                    <h1 class="title">Confidente</h1>
-                    <img src="img/ella y anyi 1.JPG" alt="" width=400px height=400px>
-
-
-                    <span class="number-page">3</span>
-                    <span class="nextprev-btn" data-page="turn-2"><i class="fas fa-angle-right"></i></span>
-                </div>
-
-                <div class="page-back">
-                    <h1 class="title">Soporte</h1>
-                    <img src="img/nosotros.JPG" alt="" width=400px height=400px>
-
-                    <span class="number-page">4</span>
-                    <span class="nextprev-btn back" data-page="turn-2"><i class="fas fa-angle-left"></i></span>
-                </div>
-
-            </div>
-
-            <div class="book-page page-right turn" id="turn-3">
-                <div class="page-front">
-                    <h1 class="title">Protección</h1>
-                    
-                    <div class="portfolio-box">
-                        <div class="img-box">
-                            <img src="img/Ella y Ary.jpg" alt="">
-                        </div>
-                        
-                        <div class="info-box">
-                            
-                            <p>Para ti Mami:</p>
-                            <p>"El amor que me has regalado toda mi vida ha sido como un combustible para lograr todo lo que me propusiera. Gracias a ello, hoy soy quien soy y tengo lo que tengo, y voy a ser la persona mas feliz sobre la faz de la tierra. Te Amo Mamá!."</p>
-                        </div>
-    
-                        <div class="btn-box">
-                            <a href="#" class="btn">Feliz Cumple</a>
-                            <a href="#" class="btn">Eres el pilar de mi vida</a>
-                        </div>
-                    </div>
-
-                    <span class="number-page">5</span>
-                    <span class="nextprev-btn" data-page="turn-3"><i class="fas fa-angle-right"></i></span>
-                </div>
-
-                <div class="page-back">
-                    <h1 class="title">Simplemente tu!</h1>
-
-                    <div class="contact-box">
-                        <form action="#">
-                            <img src="img/ella, abu y yo.JPG" alt="" width=400px height=400px>    
-                        </form>
-                        <p class="btn1">THE END</p>
-                    </div>
-                    
-                    <span class="number-page">6</span>
-                    <span class="nextprev-btn back" data-page="turn-3"><i class="fas fa-angle-left"></i></span>
-                    <a href="#" class="back-profile">
-                        <p>Inicio</p>
-                        <i class="fas fa-user"></i>
-                    </a>
-                </div>
-
-            </div>
-
+  <body>
+    <!-- Portada -->
+    <div class="container text-center">
+      <div class="birth-cover-container">
+        <!-- Imagen redonda centrada -->
+        <div class="mb-4">
+          <img src="img/delimarInicio.jpeg" alt="mama" class="img-mama1 img-round" />
         </div>
+
+        <!-- Botón contador -->
+        <div class="mb-3">
+          <button id="birth-start-btn" disabled>Cargando...</button>
+        </div>
+
+        <!-- Mensaje separado -->
+        <div id="birthday-message" class="highlight-message"></div>
+      </div>
     </div>
-    <script src="./js/momLove.js"></script>
-</body>
+
+    <!-- Canción (reproducción automática y en loop) -->
+    <audio class="song" id="background-music" autoplay loop style="display: none; opacity: 0">
+      <source src="music/index.mp3" />
+    </audio>
+
+    <!-- Confeti -->
+    <canvas id="brith-confetti"></canvas>
+
+    <!-- Contenido principal -->
+    <div class="main">
+      <div class="container pt-5">
+        <div class="row">
+          <!-- Imagen de banner -->
+          <div class="col-12 col-xl-6 mx-auto">
+            <img src="img/banner.png" alt="banner.png" />
+          </div>
+
+          <!-- Cumpleañero -->
+          <div class="col-12 text-center">
+            <div id="name" class="birth-people-name">DELIMAR</div>
+          </div>
+
+          <!-- Mensaje de felicitación -->
+          <div class="col-12 text-center">
+            <div class="birth-greeting-word">
+              <div id="greeting-word" class="typing">
+                <h2>
+                  <span>Feliz cumpleaños, </span
+                  ><i id="inline-name" class="birth-inline-people-name">Delimar ❤ </i
+                  ><span id="people-type"></span>
+                </h2>
+                <h2>Que Dios te bendiga hoy y siempre.</h2>
+                <h2>Con cada regalo, viene una sonrisa</h2>
+                <h2>Con cariño en tu día especial,</h2>
+                <h2>Fabio 🫶🏼</h2>
+              </div>
+              <span id="typed" style="white-space: pre"></span>
+            </div>
+          </div>
+
+          <!-- Imagen del pastel -->
+          <div class="col-12 col-xl-3 birth-cake">
+            <img src="img/cake.gif" alt="cake.gif" class="img-cake img-round" />
+          </div>
+
+          <div class="col-12 text-center col-xl-3 birth-mama">
+            <img src="img/delimarInicio.jpeg" alt="mama" class="img-mama img-round" />
+          </div>
+          <br>
+         
+
+          <!-- Derechos de autor -->
+          <div class="col-12 text-center">
+            <a href="pantallaLibro.html"> 
+            <button id="author">Ver Mensaje</button>
+            </a>
+            <br>
+            <span class="birth-greeting-word" id="author">&copy;2025 - Fabio Zambrana</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen de globos -->
+      <img src="img/balloon.png" alt="balloon" class="brith-balloon" />
+    </div>
+
+    <script src="js/lib/snowflakes.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/typed.min.js"></script>
+    <script src="js/lib/dayjs.min.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+      // Función para cambiar la música a "las mañanitas.mp3" cuando se muestre el contenido principal
+      function changeMusicToLasMañanitas() {
+        var musicPlayer = document.getElementById('background-music');
+        musicPlayer.src = "music/index2.mp3"; // Cambiar la fuente de la música
+        musicPlayer.play(); // Iniciar la música
+      }
+
+      // Llamar a la función para cambiar la música cuando el contenido principal se muestre
+      $(document).ready(function () {
+        $('#birth-start-btn').click(function () {
+          // Cambiar la música cuando se hace clic en el botón
+          changeMusicToLasMañanitas();
+        });
+      });
+    </script>
+  </body>
 </html>
