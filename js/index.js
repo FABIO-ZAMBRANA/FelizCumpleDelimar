@@ -1,6 +1,7 @@
 
 const birthdayMap = {
-    2025: "2025-12-21",
+    2025: "2025-12-22",
+  
 }
 const $btn = $("#birth-start-btn")
 const $main = $(".main")
