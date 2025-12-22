@@ -183,11 +183,9 @@
 
     <script src="./js/pantallaLibro.js"></script>
      <script src="./js/index.js"></script>
-    <script>
+     <script>
       (function () {
-        const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(
-          navigator.userAgent
-        );
+        const isMobile = window.innerWidth <= 768;
 
         if (isMobile) {
           document.getElementById("mobile-block").style.display = "flex";
